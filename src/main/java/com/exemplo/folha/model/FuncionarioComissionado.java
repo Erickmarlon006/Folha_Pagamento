@@ -4,8 +4,10 @@ import com.exemplo.folha.exception.DadoInvalidoException;
 import com.exemplo.folha.util.FormatadorMoeda;
 
 /**
- * Funcionário comissionado: salário-base + percentual de comissão sobre as vendas.
- * O percentual é informado de 0 a 100. Desconto simplificado de 11% sobre a remuneração bruta.
+ * Funcionário comissionado: salário-base + percentual de comissão sobre as
+ * vendas.
+ * O percentual é informado de 0 a 100. Desconto simplificado de 11% sobre a
+ * remuneração bruta.
  */
 public class FuncionarioComissionado extends Funcionario implements Tributavel {
 
@@ -16,7 +18,7 @@ public class FuncionarioComissionado extends Funcionario implements Tributavel {
     private double totalVendas;
 
     public FuncionarioComissionado(int codigo, String nome, String cpf, double salarioBase,
-                                   double percentualComissao, double totalVendas) {
+            double percentualComissao, double totalVendas) {
         super(codigo, nome, cpf, salarioBase);
         setPercentualComissao(percentualComissao);
         setTotalVendas(totalVendas);
